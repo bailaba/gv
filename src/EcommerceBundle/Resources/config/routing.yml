@@ -1,0 +1,31 @@
+ecommerce_homepage:
+    path:     /home
+    defaults: { _controller: EcommerceBundle:Produits:index }
+
+ecommerce_produits:
+    path:     /produits
+    defaults: { _controller: EcommerceBundle:Produits:produits }
+     
+ecommerce_produit:
+    path:     /produit/{id}
+    defaults: { _controller: EcommerceBundle:Produits:produit }
+     
+panier:
+    path:     /panier
+    defaults: { _controller: EcommerceBundle:Panier:index }
+    
+livraison:
+    path:     /panier/livraison
+    defaults: { _controller: EcommerceBundle:Panier:livraison }
+    
+validation:
+    path:     /panier/validation
+    defaults: { _controller: EcommerceBundle:Panier:validation }
+    
+test:
+    path:     /ajout
+    defaults: { _controller: EcommerceBundle:Test:ajout }
+    
+test_formulaire:
+    path:     /form
+    defaults: { _controller: EcommerceBundle:Test:testFormulaire }
